@@ -17,7 +17,8 @@ app.get('/', function(req, res) {
 
 
 
-app.listen(process.env.PORT || 5000);
+// app.listen(process.env.PORT || 5000);
+const port = 5000;
 
 const client = new MongoClient(uri, { useUnifiedTopology: true}, { useNewUrlParser: true }, { connectTimeoutMS: 30000 }, { keepAlive: 1});
 client.connect(err => {
@@ -29,8 +30,10 @@ client.connect(err => {
              const newRegisterInfo = req.body;
             registersCollection.insertOne(newRegisterInfo)
             .then(result => {
-                console.log(result);
+               
+                res.send(result.insertedCount > 0);
             })
     })
 });
 
+app.listen(process.env.PORT || port);
