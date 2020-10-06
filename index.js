@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
     res.send('Bismillah hirrah manir rahim');
 })
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
