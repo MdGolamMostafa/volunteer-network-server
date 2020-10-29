@@ -4,9 +4,9 @@
 
 ### Volunteer Network Overview : Full-stack Complete Responsive website for Volunteer Organization’s
 ##### - It is a full-stack responsive volunteer network web application.
-##### User can resister his/her any event/task.
-##### Used Rest API and 3 out of 4 CRUD operations in this website.
-##### Admin can add specific event for any of his/her volunteer task.
+##### - User can resister his/her any event/task.
+##### - Used Rest API and 3 out of 4 CRUD operations in this website.
+##### - Admin can add specific event for any of his/her volunteer task.
 
 
 
